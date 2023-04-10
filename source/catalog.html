@@ -44,18 +44,18 @@
   <main class="catalog-container">
     <h1 class="visually-hidden">Фотографии и видео из городка Седона</h1>
     <section class="intro intro--minor">
-      <div class="intro--minor__wrapper">
+      <div class="intro__wrapper">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="intro--minor__image" src="img/catalog/intro-banner--small.svg" width="229" height="39"
+        <img class="intro__image" src="img/catalog/intro-banner--small.svg" width="229" height="39"
           alt="Баннер Седона.">
       </div>
     </section>
     <section class="photo-gallery">
       <div class="photo-gallery__wrapper">
-        <h2 class="photo-gallery__title">
+        <h2 class="photo-gallery__title title">
           Фото и видео
         </h2>
-        <p class="photo-gallery__text">
+        <p class="photo-gallery__text basic-text">
           Не можете решиться на путешествие
           из-за курса? Фотографии помогут вам
           забыть о политике и экономике.
@@ -145,16 +145,21 @@
       </div>
     </section>
     <section class="video-presentation">
-      <h2 class="video-presentation__title">
+      <h2 class="video-presentation__title title">
         Все еще сомневаетесь?
       </h2>
-      <p class="video-presentation__text">
+      <p class="video-presentation__text basic-text">
         Смотрите видеопрезентацию и
         скорее за билетами, пока они не
         подорожали в очередной раз!
       </p>
-      <video class="video-presentation__video" width="280" height="177" src="#" poster="img/catalog/video-poster.jpg">
-      </video>
+      <div class="video-presentation__video video">
+        <a class="video__link" href="#">
+          <img class="video__poster" src="img/catalog/video-poster.jpg" width="280" height="177"
+            alt="Видео постер, на котором машины едут по дороге между скал.">
+          <span class="video__play-button"></span>
+        </a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
