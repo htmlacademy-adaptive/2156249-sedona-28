@@ -64,16 +64,22 @@
           </legend>
           <ul class="form-group__list">
             <li class="form-group__item">
-              <label class="form-group__label" for="name">Имя*:</label>
-              <input class="form-group__input" type="text" name="name" placeholder="Пётр" id="name" required>
+              <label class="form-group__label">
+                Имя*:
+                <input class="form-group__input" type="text" name="name" placeholder="Пётр" required>
+              </label>
             </li>
             <li class="form-group__item">
-              <label class="form-group__label" for="lastname">Фамилия*:</label>
-              <input class="form-group__input" type="text" name="lastname" placeholder="Пустота" id="lastname" required>
+              <label class="form-group__label">
+                Фамилия*:
+                <input class="form-group__input" type="text" name="lastname" placeholder="Пустота" required>
+              </label>
             </li>
             <li class="form-group__item">
-              <label class="form-group__label" for="middlename">Отчество:</label>
-              <input class="form-group__input" type="text" name="middlename" placeholder="Викторович" id="middlename">
+              <label class="form-group__label">
+                Отчество:
+                <input class="form-group__input" type="text" name="middlename" placeholder="Викторович">
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -83,14 +89,16 @@
           </legend>
           <ul class="form-group__list">
             <li class="form-group__item">
-              <label class="form-group__label" for="phone">Контактный телефон*:</label>
-              <input class="form-group__input" type="tel" name="phone" placeholder="Введите телефон" id="phone"
-                maxlength="21" required>
+              <label class="form-group__label form-group__label--tel">
+                Контактный телефон*:
+                <input class="form-group__input" type="tel" name="phone" placeholder="Введите телефон" required>
+              </label>
             </li>
             <li class="form-group__item">
-              <label class="form-group__label" for="email">Электронная почта*:</label>
-              <input class="form-group__input" type="email" name="email" placeholder="Введите e-mail" id="email"
-                required>
+              <label class="form-group__label form-group__label--email">
+                Электронная почта*:
+                <input class="form-group__input" type="email" name="email" placeholder="Введите e-mail" required>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -100,20 +108,23 @@
           </legend>
           <ul class="form-group__list">
             <li class="form-group__item">
-              <label class="control">
-                <input class="control__input" type="radio" name="impression" value="positive">
+              <label class="form-group__control control">
+                <input class="control__radio" type="radio" name="impression" value="positive" checked>
+                <span class="control__radio-mark"></span>
                 <span class="control__label">Скорее положительное</span>
               </label>
             </li>
             <li class="form-group__item">
-              <label class="control">
-                <input class="control__input" type="radio" name="impression" value="negative">
+              <label class="form-group__control control">
+                <input class="control__radio" type="radio" name="impression" value="negative">
+                <span class="control__radio-mark"></span>
                 <span class="control__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="form-group__item">
-              <label class="control">
-                <input class="control__input" type="radio" name="impression" value="dontknow">
+              <label class="form-group__control control">
+                <input class="control__radio" type="radio" name="impression" value="dontknow">
+                <span class="control__radio-mark"></span>
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
             </li>
@@ -126,26 +137,30 @@
           </legend>
           <ul class="form-group__list">
             <li class="form-group__item">
-              <label class="control">
-                <input class="control__input" type="checkbox" name="Devil's Bridge" checked>
+              <label class="form-group__control control">
+                <input class="control__checkbox" type="checkbox" name="sight" value="devils-bridge" checked>
+                <span class="control__checkbox-mark"></span>
                 <span class="control__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="form-group__item">
-              <label class="control">
-                <input class="control__input" type="checkbox" name="Bell Rock" checked>
+              <label class="form-group__control control">
+                <input class="control__checkbox" type="checkbox" name="sight" value="bell-rock" checked>
+                <span class="control__checkbox-mark"></span>
                 <span class="control__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="form-group__item">
-              <label class="control">
-                <input class="control__input" type="checkbox" name="Slide Park" checked>
+              <label class="form-group__control control">
+                <input class="control__checkbox" type="checkbox" name="sight" value="slide-park" checked>
+                <span class="control__checkbox-mark"></span>
                 <span class="control__label">Слайд-парк</span>
               </label>
             </li>
             <li class="form-group__item">
-              <label class="control">
-                <input class="control__input" type="checkbox" name="Red Rocks">
+              <label class="form-group__control control">
+                <input class="control__checkbox" type="checkbox" name="sight" value="red-rocks">
+                <span class="control__checkbox-mark"></span>
                 <span class="control__label">Красные скалы</span>
               </label>
             </li>
@@ -155,15 +170,22 @@
           <legend class="form-group__title">
             Опишите свои эмоции:
           </legend>
-          <textarea class="form-group__input" name="comment" placeholder="Опишите подробно все свои восторги"
-            id="comment" rows="4"></textarea>
+          <label class="form-group__label">
+            <span class="visually-hidden">
+              Опишите подробно все свои восторги.
+            </span>
+            <textarea class="form-group__textarea" name="comment"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
         </fieldset>
-        <button class="form__button button" type="submit">
-          Отправить отзыв
-        </button>
-        <span class="form__note">
-          * — обязательные поля
-        </span>
+        <div class="form__button-note-wrapper">
+          <button class="form__button button" type="submit">
+            Отправить отзыв
+          </button>
+          <span class="form__note">
+            * — обязательные поля
+          </span>
+        </div>
       </form>
     </section>
   </main>
@@ -203,7 +225,7 @@
       </span>
     </a>
   </footer>
-  <div class="modal modal--failure">
+  <section class="modal modal--failure">
     <div class="modal__content modal-content heading">
       <h2 class="heading__title">
         Что-то пошло не так!
@@ -217,8 +239,8 @@
         Ок
       </button>
     </div>
-  </div>
-  <div class="modal modal--success">
+  </section>
+  <section class="modal modal--success">
     <div class="modal__content modal-content heading">
       <h2 class="heading__title">
         Ваш отзыв отправлен!
@@ -235,7 +257,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </body>
 
 </html>
