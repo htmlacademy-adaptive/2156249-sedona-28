@@ -1,4 +1,7 @@
+// Хедер
 @import "./blocks/main-header.scss";
+
+// Мейн в индексе
 @import "./blocks/main-container.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/advantages.scss";
@@ -8,5 +11,23 @@
 @import "./blocks/accomodation.scss";
 @import "./blocks/button.scss";
 @import "./blocks/map.scss";
+
+// Футер
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
+
+// Каталог
+@import "./blocks/photo-gallery.scss";
+@import "./blocks/card.scss";
+@import "./blocks/likes.scss";
+@import "./blocks/video-presentation.scss";
+
+// Форма
+@import "./blocks/feedback.scss";
+@import "./blocks/form.scss";
+@import "./blocks/form-group.scss";
+@import "./blocks/control.scss";
+
+// Модальные окна
+@import "./blocks/modal.scss";
+@import "./blocks/modal-content.scss";
