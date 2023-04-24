@@ -1,3 +1,12 @@
+// Миксины
+@import "./mixins.scss";
+
+// Базовые стили
+@import "./base/fonts.scss";
+@import "./base/visually-hidden.scss";
+@import "./base/page.scss";
+@import "./base/body.scss";
+
 // Хедер
 @import "./blocks/main-header.scss";
 
@@ -6,8 +15,6 @@
 @import "./blocks/intro.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/heading.scss";
-@import "./blocks/basic-title.scss";
-@import "./blocks/basic-text.scss";
 @import "./blocks/accomodation.scss";
 @import "./blocks/button.scss";
 @import "./blocks/map.scss";
