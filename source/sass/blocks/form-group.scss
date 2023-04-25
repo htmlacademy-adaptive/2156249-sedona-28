@@ -1,0 +1,19 @@
+.form-group {
+  border: 0;
+}
+
+.form-group__title {
+  @include basic-title;
+}
+
+.form-group__list {
+  @include list-reset;
+}
+
+.form-group__item {
+  margin-bottom: 16px;
+}
+
+.form-group__item:last-child {
+  margin-bottom: 0;
+}
