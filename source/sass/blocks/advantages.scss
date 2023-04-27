@@ -8,7 +8,9 @@
 }
 
 .advantages__list {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .advantages__text-wrapper {
@@ -20,7 +22,11 @@
 }
 
 .advantages__title {
-  @include basic-title;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .advantages__title--white {

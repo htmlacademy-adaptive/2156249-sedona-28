@@ -1,5 +1,7 @@
 .main-nav__list {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .main-nav__link {
