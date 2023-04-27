@@ -1,0 +1,25 @@
+.form-group {
+  border: 0;
+}
+
+.form-group__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.form-group__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-group__item {
+  margin-bottom: 16px;
+}
+
+.form-group__item:last-child {
+  margin-bottom: 0;
+}

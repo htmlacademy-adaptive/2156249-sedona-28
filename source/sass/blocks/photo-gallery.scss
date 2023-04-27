@@ -1,0 +1,22 @@
+.photo-gallery {
+  padding: 0 18px;
+  margin-bottom: 17px;
+}
+
+.photo-gallery__heading {
+  margin-bottom: 25px;
+}
+
+.photo-gallery__list {
+  margin: 0;
+  padding: 24px 0 25px 0;
+  list-style-type: none;
+}
+
+.photo-gallery__item {
+  margin-bottom: 50px;
+}
+
+.photo-gallery__item:last-child {
+  margin-bottom: 0;
+}
