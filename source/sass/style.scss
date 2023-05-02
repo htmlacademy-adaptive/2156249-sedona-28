@@ -1,17 +1,17 @@
-// Миксины
-@import "./mixins.scss";
+// Вьюпорты
+$tablet-width: 768px;
+$desktop-width: 1280px;
 
 // Базовые стили
 @import "./base/fonts.scss";
-@import "./base/visually-hidden.scss";
-@import "./base/page.scss";
-@import "./base/body.scss";
+@import "./base/utils.scss";
 
 // Хедер
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 
 // Мейн в индексе
+@import "./blocks/page.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/advantages.scss";

@@ -1,6 +1,13 @@
 .accomodation {
-  padding: 0 18px;
-  margin-bottom: 49px;
+  padding: 39px 18px 49px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 60px 55px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 120px 66px 120px;
+  }
 }
 
 .accomodation__link {

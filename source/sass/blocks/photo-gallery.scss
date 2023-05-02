@@ -1,6 +1,13 @@
 .photo-gallery {
-  padding: 0 18px;
-  margin-bottom: 17px;
+  padding: 38px 18px 0 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 60px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 0 40px;
+  }
 }
 
 .photo-gallery__heading {
