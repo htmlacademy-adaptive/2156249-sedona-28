@@ -1,8 +1,23 @@
 .feedback {
-  padding: 0 18px;
-  margin-bottom: 22px;
+  padding: 36px 18px 22px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 40px 64px 40px;
+  }
 }
 
 .feedback__heading {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
 }

@@ -1,1 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 480px 480px;
+}
+}
