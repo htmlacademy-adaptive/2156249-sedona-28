@@ -1,10 +1,7 @@
-// Вьюпорты
-$tablet-width: 768px;
-$desktop-width: 1280px;
-
 // Базовые стили
 @import "./base/fonts.scss";
 @import "./base/utils.scss";
+@import "./base/variables.scss";
 
 // Хедер
 @import "./blocks/main-header.scss";
