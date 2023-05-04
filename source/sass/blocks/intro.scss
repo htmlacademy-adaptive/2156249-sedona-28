@@ -7,22 +7,27 @@
   padding: 90px 18px 85px 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 60px 91px 60px;
+    padding: 77px 154px 91px 153px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 120px 91px 120px;
+    padding: 78px 370px 90px 370px;
   }
 }
 
 .intro--minor {
-  padding: 52px 18px 67px 18px;
+  padding: 52px 46px 67px 45px;
 
   @media (min-width: $tablet-width) {
-    padding: 95px 60px 118px 60px;
+    padding: 95px 154px 118px 157px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 101px 120px 120px 120px;
+    padding: 101px 371px 120px 369px;
   }
+}
+
+.intro__image {
+  display: block;
+  margin: 0 auto;
 }

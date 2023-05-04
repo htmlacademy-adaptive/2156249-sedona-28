@@ -1,14 +1,32 @@
 .form {
-  display: flex;
-  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__group {
+  width: 100%;
+  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 324px 324px;
+    width: 50%;
+    margin-bottom: 48px;
   }
 
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 480px 480px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+
+    &:last-child {
+      margin-bottom: 48px;
+    }
+  }
 }
+
+.form__group--full {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

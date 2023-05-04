@@ -1,27 +1,17 @@
 .main-nav__toggle {
   @media (min-width: $tablet-width) {
-  display: none;
-}
+    display: none;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  max-width: 320px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 153px 153px 153px 153px 153px;
-    max-width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 240px 240px 240px 240px 240px;
-    max-width: 1200px;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -32,6 +22,10 @@
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+
+    &:nth-child(4n - 1) {
+      grid-column-start: 4;
+    }
   }
 }
 

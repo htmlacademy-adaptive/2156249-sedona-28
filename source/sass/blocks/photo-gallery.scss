@@ -26,25 +26,37 @@
   margin: 0;
   padding: 24px 0 25px 0;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 324px 324px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .photo-gallery__item {
+  width: 100%;
   margin-bottom: 50px;
 
+
   @media (min-width: $tablet-width) {
+    width: 50%;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% / 3);
+  }
+}
+
+.photo-gallery__item--full {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
