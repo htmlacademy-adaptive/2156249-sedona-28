@@ -1,7 +1,23 @@
 .video-presentation {
   padding: 0 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 60px 40px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 40px 84px 40px;
+  }
 }
 
 .video-presentation__heading {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
