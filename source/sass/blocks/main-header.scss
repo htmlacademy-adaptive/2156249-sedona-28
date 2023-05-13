@@ -1,5 +1,6 @@
 .main-header {
   position: relative;
+  height: 56px;
 }
 
 .main-header__logo {
@@ -10,5 +11,9 @@
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.main-header__nav {
+  position: absolute;
 }
 
