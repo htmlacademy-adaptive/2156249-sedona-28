@@ -11,7 +11,7 @@
 }
 
 .feedback__heading {
-  margin-bottom: 28px;
+  margin-bottom: 53px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 108px;
@@ -20,4 +20,20 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 68px;
   }
+}
+
+.feedback__heading-title {
+  margin: 0 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.feedback__heading-text {
+  margin: 0;
 }

@@ -50,10 +50,10 @@
       </section>
       <section class="feedback">
         <div class="feedback__heading heading">
-          <h2 class="heading__title">
+          <h2 class="feedback__heading-title heading__title">
             Оставьте свой отзыв
           </h2>
-          <p class="heading__text">
+          <p class="feedback__heading-text heading__text">
             Помогите нашим отелям стать лучше!
             Оставьте отзыв о них, а также о
             посещенных вами
@@ -68,13 +68,13 @@
             <ul class="form-group__list">
               <li class="form-group__item">
                 <label class="form-group__label">
-                  Имя*:
+                  Имя <sup>*</sup>:
                   <input class="form-group__input" type="text" name="name" placeholder="Пётр" required>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__label">
-                  Фамилия*:
+                  Фамилия<sup>*</sup>:
                   <input class="form-group__input" type="text" name="lastname" placeholder="Пустота" required>
                 </label>
               </li>
@@ -93,14 +93,14 @@
             <ul class="form-group__list">
               <li class="form-group__item">
                 <label class="form-group__label form-group__label--tel">
-                  Контактный телефон*:
-                  <input class="form-group__input" type="tel" name="phone" placeholder="Введите телефон" required>
+                  Контактный телефон<sup>*</sup>:
+                  <input class="form-group__input form-group__input--tel" type="tel" name="phone" placeholder="Введите телефон" required>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__label form-group__label--email">
-                  Электронная почта*:
-                  <input class="form-group__input" type="email" name="email" placeholder="Введите e-mail" required>
+                  Электронная почта<sup>*</sup>:
+                  <input class="form-group__input form-group__input--email" type="email" name="email" placeholder="Введите e-mail" required>
                 </label>
               </li>
             </ul>
@@ -112,21 +112,21 @@
             <ul class="form-group__list">
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__radio" type="radio" name="impression" value="positive" checked>
+                  <input class="control__radio visually-hidden" type="radio" name="impression" value="positive" checked>
                   <span class="control__radio-mark"></span>
                   <span class="control__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__radio" type="radio" name="impression" value="negative">
+                  <input class="control__radio visually-hidden" type="radio" name="impression" value="negative">
                   <span class="control__radio-mark"></span>
                   <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__radio" type="radio" name="impression" value="dontknow">
+                  <input class="control__radio visually-hidden" type="radio" name="impression" value="dontknow">
                   <span class="control__radio-mark"></span>
                   <span class="control__label">Затрудняюсь ответить</span>
                 </label>
@@ -141,28 +141,28 @@
             <ul class="form-group__list">
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__checkbox" type="checkbox" name="sight" value="devils-bridge" checked>
+                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="devils-bridge" checked>
                   <span class="control__checkbox-mark"></span>
                   <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__checkbox" type="checkbox" name="sight" value="bell-rock" checked>
+                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="bell-rock" checked>
                   <span class="control__checkbox-mark"></span>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__checkbox" type="checkbox" name="sight" value="slide-park" checked>
+                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="slide-park" checked>
                   <span class="control__checkbox-mark"></span>
                   <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__checkbox" type="checkbox" name="sight" value="red-rocks">
+                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="red-rocks">
                   <span class="control__checkbox-mark"></span>
                   <span class="control__label">Красные скалы</span>
                 </label>
