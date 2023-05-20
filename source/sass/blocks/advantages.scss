@@ -28,6 +28,18 @@
   }
 }
 
+.advantages__heading-title {
+  margin: 0 0 35px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 26px 0;
+  }
+}
+
+.advantages__heading-text {
+  margin: 0;
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;

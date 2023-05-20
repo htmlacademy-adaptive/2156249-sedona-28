@@ -10,9 +10,31 @@
   }
 }
 
+.accomodation__heading {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.accomodation__heading-title {
+  margin: 0 0 18px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 26px 0;
+  }
+}
+
+.accomodation__heading-text {
+  margin: 0;
+}
+
 .accomodation__link {
   text-decoration: none;
   display: block;
   margin: 0 auto;
   max-width: 458px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
