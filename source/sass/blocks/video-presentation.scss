@@ -14,10 +14,18 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
   }
+}
+
+.video-presentation__heading-title {
+  margin: 0 0 26px 0;
+}
+
+.video-presentation__heading-text {
+  margin: 0;
 }
