@@ -61,7 +61,7 @@
           </p>
         </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__group form-group">
+          <fieldset class="form__group form-group form-group--name">
             <legend class="form-group__title">
               Представьтесь:
             </legend>
@@ -86,30 +86,32 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group form-group">
-            <legend class="form-group__title">
+          <fieldset class="form__group form-group form-group--contacts">
+            <legend class="form-group__title form-group__title--contacts">
               Контактная информация:
             </legend>
-            <ul class="form-group__list">
+            <ul class="form-group__list form-group__list--contacts">
               <li class="form-group__item">
                 <label class="form-group__label form-group__label--tel">
                   Контактный телефон<sup>*</sup>:
-                  <input class="form-group__input form-group__input--tel" type="tel" name="phone" placeholder="Введите телефон" required>
+                  <input class="form-group__input form-group__input--tel" type="tel" name="phone"
+                    placeholder="Введите телефон" required>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__label form-group__label--email">
                   Электронная почта<sup>*</sup>:
-                  <input class="form-group__input form-group__input--email" type="email" name="email" placeholder="Введите e-mail" required>
+                  <input class="form-group__input form-group__input--email" type="email" name="email"
+                    placeholder="Введите e-mail" required>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group form__group--full form-group">
-            <legend class="form-group__title">
+          <fieldset class="form__group form__group--full form-group form-group--impressions">
+            <legend class="form-group__title form-group__title--decor">
               Ваше общее впечатление:
             </legend>
-            <ul class="form-group__list">
+            <ul class="form-group__list form-group__list--impressions">
               <li class="form-group__item">
                 <label class="form-group__control control">
                   <input class="control__radio visually-hidden" type="radio" name="impression" value="positive" checked>
@@ -133,29 +135,32 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group form__group--full form-group">
-            <legend class="form-group__title">
-              Посещенные
+          <fieldset class="form__group form__group--full form-group form-group--sights">
+            <legend class="form-group__title form-group__title--decor">
+              Посещенные <br>
               достопримечательности:
             </legend>
-            <ul class="form-group__list">
+            <ul class="form-group__list form-group__list--sights">
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="devils-bridge" checked>
+                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="devils-bridge"
+                    checked>
                   <span class="control__checkbox-mark"></span>
                   <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="bell-rock" checked>
+                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="bell-rock"
+                    checked>
                   <span class="control__checkbox-mark"></span>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="form-group__item">
                 <label class="form-group__control control">
-                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="slide-park" checked>
+                  <input class="control__checkbox visually-hidden" type="checkbox" name="sight" value="slide-park"
+                    checked>
                   <span class="control__checkbox-mark"></span>
                   <span class="control__label">Слайд-парк</span>
                 </label>
@@ -169,8 +174,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group form__group--full form-group">
-            <legend class="form-group__title">
+          <fieldset class="form__group form__group--full form-group form-group--emotions">
+            <legend class="form-group__title form-group__title--decor">
               Опишите свои эмоции:
             </legend>
             <label class="form-group__label">

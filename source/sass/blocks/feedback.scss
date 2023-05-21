@@ -14,7 +14,8 @@
   margin-bottom: 53px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 108px;
+    margin: 0 auto 108px auto;
+    max-width: 436px;
   }
 
   @media (min-width: $desktop-width) {
