@@ -1,22 +1,53 @@
+.card {
+  display: flex;
+}
+
 .card__image-text-wrapper {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     position: relative;
+    padding-top: 187px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  &--full {
+    @media (min-width: $desktop-width) {
+      padding-top: 320px;
+    }
   }
 }
 
 .card__link {
-  display: block;
+  display: flex;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
 
 .card__image {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .card__text-wrapper {
@@ -24,20 +55,18 @@
     display: flex;
     justify-content: space-between;
     padding: 22px 20px 15px 20px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
-    box-sizing: border-box;
+    flex-grow: 1;
   }
 
   &--dark {
     @media (min-width: $tablet-width) {
-      background-color: #EAEAEA;
+      background-color: #eaeaea;
     }
 
     @media (min-width: $desktop-width) {
