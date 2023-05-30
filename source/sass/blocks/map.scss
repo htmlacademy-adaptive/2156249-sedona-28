@@ -1,3 +1,9 @@
-.map {
-  // margin-bottom: 8px;
+.map__iframe-wrapper {
+  height: 350px;
+}
+
+.map__iframe {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
 }

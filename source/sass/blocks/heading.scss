@@ -5,6 +5,16 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+
+  &--small {
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+    }
+  }
 }
 
 .heading__text {

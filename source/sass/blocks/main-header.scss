@@ -1,3 +1,18 @@
 .main-header {
-  // пока пусто
+  position: relative;
+  height: 56px;
+}
+
+.main-header__logo {
+  width: 185px;
+  height: 96px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.main-header__nav {
+  position: absolute;
 }
