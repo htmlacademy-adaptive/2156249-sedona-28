@@ -5,15 +5,26 @@
   margin-right: 0;
 
   &--name {
+    position: relative;
+
     @media (min-width: $tablet-width) {
-      padding-right: 70px;
-      position: relative;
+      width: calc(50% - 29px);
     }
 
     @media (min-width: $desktop-width) {
-      padding-right: 128px;
-      width: 430px;
-      box-sizing: content-box;
+      width: calc(50% - 50px);
+    }
+  }
+
+  &--contacts {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: calc(50% - 29px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: calc(50% - 50px);
     }
   }
 
@@ -21,21 +32,15 @@
     @media (min-width: $tablet-width) {
       content: "";
       width: 1px;
-      height: 338px;
+      height: calc(100% + 54px);
       background-color: #dbdbdb;
       position: absolute;
       top: -53px;
-      right: 26px;
+      right: -29px;
     }
 
     @media (min-width: $desktop-width) {
-      right: 64px;
-    }
-  }
-
-  &--contacts {
-    @media (min-width: $desktop-width) {
-      max-width: 402px;
+      right: -50px;
     }
   }
 }
@@ -53,16 +58,6 @@
     font-size: 21px;
     margin-bottom: 28px;
     width: 100%;
-  }
-
-  &--contacts {
-    @media (min-width: $tablet-width) {
-      text-align: left;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-left: 30px;
-    }
   }
 
   &--decor {
@@ -105,13 +100,12 @@
   padding: 0;
   list-style-type: none;
 
+  &--name,
   &--contacts {
     @media (min-width: $tablet-width) {
-      padding-left: 18px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
     }
   }
 
@@ -184,14 +178,12 @@
 
   &:active {
     background-color: #ffffff;
-    border: 4px solid #e5e5e5;
-    padding: 12px;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
   }
 
   &:focus-visible {
     background-color: #ffffff;
-    border: 4px solid #e5e5e5;
-    padding: 12px;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
     outline: none;
   }
 
@@ -227,6 +219,7 @@
   margin: 0 auto;
   border: none;
   padding: 16px;
+  resize: none;
 
   background-color: #f2f2f2;
   color: #000000;
@@ -248,14 +241,12 @@
 
   &:active {
     background-color: #ffffff;
-    border: 4px solid #e5e5e5;
-    padding: 12px;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
   }
 
   &:focus-visible {
     background-color: #ffffff;
-    border: 4px solid #e5e5e5;
-    padding: 12px;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
     outline: none;
   }
 }

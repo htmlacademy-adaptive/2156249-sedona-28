@@ -24,18 +24,6 @@
   left: 15px;
 }
 
-.control__radio:hover + .control__radio-mark {
-  background-color: #e5e5e5;
-}
-
-.control__radio:disabled + .control__radio-mark {
-  background-color: #d5d5d5;
-}
-
-.control__radio:disabled:checked + .control__radio-mark::before {
-  background-color: rgba(51, 51, 51, 0.3);
-}
-
 .control__checkbox-mark {
   width: 46px;
   height: 46px;
@@ -52,16 +40,27 @@
   left: 12px;
 }
 
-.control__checkbox:hover + .control__checkbox-mark {
+.control:hover .control__radio-mark,
+.control:hover .control__checkbox-mark {
   background-color: #e5e5e5;
 }
 
-.control__checkbox:disabled + .control__checkbox-mark {
+.control:active .control__radio-mark,
+.control:active .control__checkbox-mark {
   background-color: #d5d5d5;
 }
 
-.control__checkbox:disabled:checked + .control__checkbox-mark::before {
-  content: url("../img/svg/icon-tick-pale.svg");
+.control:active .control__radio-mark::before {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.control:active .control__checkbox-mark::before {
+  opacity: 0.3;
+}
+
+.control__radio:focus + .control__radio-mark,
+.control__checkbox:focus + .control__checkbox-mark {
+  outline: 4px solid #5496bd;
 }
 
 .control__label {
